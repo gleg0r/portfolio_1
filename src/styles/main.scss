@@ -5,3 +5,109 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+
+$blue-color: #061e37;
+$text-color: #ffffff;
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    &__logo {
+        background-image: url(../img/svg/Logo.svg);
+        background-repeat: no-repeat;
+        width: 180px;
+        height: 30px;
+        margin-left: 78px;
+        margin-top: 51px;
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 60px;
+        margin-top: 53px;
+        &__item {
+            margin-right: 45px;
+            color: $text-color
+            
+        } 
+        &__link.active {
+            color: $blue-color;
+        }
+        &__link {
+            text-decoration: none;
+            color: $text-color;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            &:hover {
+                color: $blue-color;
+                transition: 0.5s;
+            }
+        } 
+    }
+    &__modal {
+        margin-right: -347px;
+        margin-top: 50px;
+        padding: 5px 19px;
+        background: 0;
+        outline: 0;
+        border: 1px solid;
+        border-color: white;
+        color: white;
+        text-transform: lowercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }  
+}
+.page-main {
+    position: relative;
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    &__svg {
+        background-image: url(../img/svg/BG.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1600px;
+        height: 750px;
+        z-index: -1;
+    }
+}
+.block-video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 159px;
+    margin-bottom: 185px;
+    &-text {
+        flex-basis: 37%;
+        margin-left: 75px;
+        &__title {
+            text-transform: uppercase;
+            color: $text-color;
+            font-size: 55px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 800;
+            letter-spacing: 0.7px;
+        }
+        &__desc {
+            color: $text-color;
+            font-size: 18px;
+            font-family: 'Raleway', sans-serif;
+            line-height: 2;
+            margin-top: 12px;
+            margin-left: 1px;
+        }
+    }
+}

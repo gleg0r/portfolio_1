@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
+        <title>Data Service Center</title>
         <meta name="theme-color" content="#fff">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -24,83 +24,280 @@
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
         <link rel="stylesheet" href="styles/main.css">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="dara sevice center/portifolio_1/src/icofont.min.css">
+        <link rel="stylesheet" href="dara sevice center/portifolio_1/src/icofont.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap" rel="stylesheet">
     </head>
     <body>
-       <div class="page-main">
-		<header>
-			<div class="header">
-				<a href="" class="header__logo"></a>
-					<ul class="header-list">
-						<li class="header-list__item">Home</li>
-						<li class="header-list__item">About</li>
-						<li class="header-list__item">Contents</li>
-						<li class="header-list__item">Books</li>
-						<li class="header-list__item">Education</li>
-						<li class="header-list__item">Skills</li>
-						<li class="header-list__item">Portofolio</li>
-						<li class="header-list__item">Clients</li>
-						<li class="header-list__item">Contact</li>
-					</ul>
-			</div>
-		</header>	
-	
-	
-		<div class="wrap">
-			<div class="block-book">
-				<div></div>
-				<div class="block-text">
-					<p class="block-text__name">- By Emma Aderson</p>
-					<h1>BUKKE: THE BOOK <span>A room without books is like a body without a soul</span></h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p> 
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-					<a href="" class="block-text__btn">Buy this book - $15.00</a>
-					<small>* Some conditions may applicable</small>
-			</div>	
-		</div>
-	
-		<div class="page">
-			<div class="wrap">
-				<div class="book-author">
-					<div class="block-text">
-					<p class="block-text__name"> - Book Author</p>
-					<h2 class="block-text__title">Emma Anderson <span>A room without books is like a body without a soul</span></h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-						<a href="" class="block-text__btn">Read full biography</a>
-					</div>
-					<div></div>
-				</div>
-				<div class="block-counter">
-						<p><span>12</span>Total published books</p>
-						<p><span>5</span>Happy readers</p>
-						<p><span>15,000</span>Happy readers </p>
-				</div>		
-			</div>	
-		</div>
-		<div class="page page_gray">
-			<div class="book-contents">
-				<h1>Book Contents <span> Let's see what we have covered in the book</span></h1>
-					<h3>About the book</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur. </p>
-					<h4>Featured in: <a href="" src=""></a></h4>
-				<h3>Table of contents</h3>
-					<ol>
-						<li class="table-of-contents__item">1. Lorem ipsum dolor sit amet</li>
-						<li class="table-of-contents__item">2. Consectetur adipisicing elit</li>
-						<li class="table-of-contents__item">3. Labore et dolore magna</li>
-						<li class="table-of-contents__item">4. Consectetur adipisicing elit</li>
-						<li class="table-of-contents__item">5. Labore et dolore magna</li>
-						<li class="table-of-contents__item">6.  Lorem ipsum dolor sit amet</li>
-						<li class="table-of-contents__item">7. Consectetur adipisicing elit</li>
-						<li class="table-of-contents__item">8. Labore et dolore magna</li>
-						<li class="table-of-contents__item">9. Consectetur adipisicing elit</li>
-						<li class="table-of-contents__item">10. Labore et dolore magna</li>
-					</ol>
-					<button>More</button>
-			</div>
-		</div>
-	</div>	
+		<div class="page-main" id="main">
+            <img class="page-main__img" src="../img/bg.png">
+            <svg class="page-main__svg" src="../img/BG.svg"></svg>
+            <header>
+                <div class="header">
+                    <a class="header__logo" href="#main"></a>
+                        <ul class="header-list">
+                            <li class="header-list__item"><a href="" class="header-list__link">Home</a></li>
+                            <li class="header-list__item "><a href="" class="header-list__link active">Service</a></li>
+                            <li class="header-list__item"><a href="" class="header-list__link">Extension</a></li>
+                            <li class="header-list__item"><a href="" class="header-list__link">Pricing</a></li>
+                            <li class="header-list__item"><a href="" class="header-list__link">Help</a></li>
+                        </ul>
+                    <button class="header__modal">Sign Up</button>    
+                </div>
+            </header>
+            <div class="wrap">
+                <div class="block-video">
+                    <div class="block-video-text">
+                        <h1 class="block-video-text__title">lorem Ipsum<br> Dolor sit amet</h1>
+                        <p class="block-video-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc</p>
+                            <button class="mdc-button--raised" style="background-color: #061e37; outline: 0; border: 0; border-radius: 4px; margin-top: 10px; padding: 18px 38px; margin-left: 4px; font-size: 15px;">
+                                <span class="mdc-button__label" style="text-transform: uppercase;font-family: 'Material Icons', sans-serif; ">Buy now</span>
+                              </button>
+                            <button class="mdc-button--raised" style="background-color: #ffffff; outline: 0; border: 0; border-radius: 4px; margin-top: 10px; padding: 18px 25px; margin-left: 27px; font-size: 15px;">
+                                <span class="mdc-button__label" style="text-transform: uppercase;font-family: 'Material Icons', sans-serif; color: #061e37;">Try for free</span>
+                            </button>
+                    </div>
+                    <div class="block-video-demo">
+                        <a href="" class="block-video-demo__link"><img src="../img/play_button.png"></a>
+                        <p class="block-video-demo__text">Watch the video</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="wrap">
+                <div class="block-easy">
+                    <div class="block-easy-text">
+                        <h2 class="block-easy-text__title">Easy & Useful
+                            <span>Project Management Tool</span>
+                        </h2>
+                        
+                        <p class="block-easy-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+                    </div>
+                    <div class="block-easy-icons">
+                        <div class="block-easy-icons-items">
+                            <h4 class="block-easy-icons-items__title">Title goes here</h4>
+                            <p class="block-easy-icons-items__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="block-easy-icons-items">
+                            <h4 class="block-easy-icons-items__title">Title goes here</h4>
+                            <p class="block-easy-icons-items__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="block-easy-icons-items">
+                            <h4 class="block-easy-icons-items__title">Title goes here</h4>
+                            <p class="block-easy-icons-items__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="block-easy-colors">
+                        <div class="block-easy-colors-item">
+                            <p class="block-easy-colors-item__desc">12000+ Business</p>
+                        </div>
+                        <div class="block-easy-colors-item">
+                            <p class="block-easy-colors-item__desc">60000+ Downloads</p>
+                        </div>
+                        <div class="block-easy-colors-item">
+                            <p class="block-easy-colors-item__desc">30000+ Free Installs</p>
+                        </div>
+                        <div class="block-easy-colors-item">
+                            <p class="block-easy-colors-item__desc">40000+ Pro Users</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="page">
+            <div class="wrap">
+                <div class="block-service" id="service">
+                    <h2 class="block-service__title">Services</h2>
+                    <p class="block-service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <div class="block-service-tabs">
+                        <div class="block-service-tabs__tab active">Statistics</div>
+                        <div class="block-service-tabs__tab">Inbox</div>
+                        <div class="block-service-tabs__tab">Team</div>
+                        <div class="block-service-tabs__tab">Settings</div>
+                        <div class="block-service-tabs__tab">Feed</div>
+                        <div class="block-service-tabs__tabContent">
+                            <img>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                        </div>
+                        <div class="block-service-tabs__tabContent">
+                            <img>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                        </div>
+                        <div class="block-service-tabs__tabContent">
+                            <img>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                        </div>
+                        <div class="block-service-tabs__tabContent">
+                            <img>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                        </div>
+                        <div class="block-service-tabs__tabContent">
+                            <img>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__green">
+            <div class="wrap">
+                <div class="block-feedback">
+                    <div class="block-feedback-text">
+                        <h2 class="block-feedback-text__title">What our customers have to say about us.</h2>
+                        <p class="block-feedback-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                        <a class="block-feedback-text__btn" href="">Get Started</a>
+                    </div>
+                    <div class="block-feedback-slider">
+                        <div>
+                            <div class="block-feedback-slider-ava">
+                                <div class="block-feedback-slider-thumb">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="block-feedback-slider-text">
+                                    <h3>John Doe</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                </div>
+                            </div>
+                            <div class="block-feedback-slider-ava">
+                                <div class="block-feedback-slider-thumb">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="block-feedback-slider-text">
+                                    <h3>John Doe</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="block-feedback-slider-ava">
+                                    <div class="block-feedback-slider-thumb">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="block-feedback-slider-text">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                                <div class="block-feedback-slider-ava">
+                                    <div class="block-feedback-slider-thumb">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="block-feedback-slider-text">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="block-feedback-slider-ava">
+                                    <div class="block-feedback-slider-thumb">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="block-feedback-slider-text">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                                <div class="block-feedback-slider-ava">
+                                    <div class="block-feedback-slider-thumb">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="block-feedback-slider-text">
+                                        <h3>John Doe</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="wrap">
+                <div class="block-team">
+                    <div class="block-team-text">
+                        <h2 class="block-team-text__title">Our Team</h2>
+                        <p class="block-team-text__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    </div>
+                    <div class="block-team">
+                        <div>
+                            <div class="block-team-ava">
+                                <img src="" alt="">
+                                <h3 class="block-team-ava__title">Sophie Turner</h3>
+                                <p class="block-team-ava__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </p>
+                                <div class="block-team-ava-social">
+                                    <ul class="block-team-ava-social__list">
+                                        <li class="block-team-ava-social__item"></li>
+                                        <li class="block-team-ava-social__item"></li>
+                                        <li class="block-team-ava-social__item"></li>
+                                        <li class="block-team-ava-social__item"></li>
+                                        <li class="block-team-ava-social__item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="wrap">
+                <div class="block-contact">
+                    <h3 class="block-content__title">Contact Us</h3>
+                    <p class="block-content__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                    <div class="block-contact-input">
+                        <input class="block-contact-input__item" type="text" placeholder="First Name">
+                        <input class="block-contact-input__item" type="text" placeholder="Last Name">
+                        <input class="block-contact-input__item" type="text" placeholder="Email">
+                        <input class="block-contact-input__item" type="text" placeholder="Phone">
+                        <input class="block-contact-input__item-big" type="text" placeholder="Message">
+                        <input class="block-contact-input__item" type="checkbox"><p class="block-contact-input-desc">subscribe to the newsletter</p>
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="wrap">
+                    <div class="block-footer">
+                        <div class="block-footer__item">
+                            <a href="block-footer__logo"></a>
+                            <ul class="block-footer-list">
+                                <li class="block-footer-list__item"><a href="" class="block-footer-list__link">Privecy Policy</a></li>
+                                <li class="block-footer-list__item"><a href="" class="block-footer-list__link">About Us</a></li>
+                                <li class="block-footer-list__item"><a href="" class="block-footer-list__link">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="block-footer__item">
+                            <div class="block-footer-menu">
+                                <ul class="block-footer-menu-list">
+                                    <li class="block-footer-menu-list__item"><a href="" class="block-footer-menu-list__link">Home</a></li>
+                                    <li class="block-footer-menu-list__item"><a href="" class="block-footer-menu-list__link">Service</a></li>
+                                    <li class="block-footer-menu-list__item"><a href="" class="block-footer-menu-list__link">Extension</a></li>
+                                    <li class="block-footer-menu-list__item"><a href="" class="block-footer-menu-list__link">Pricing</a></li>
+                                    <li class="block-footer-menu-list__item"><a href="" class="block-footer-menu-list__link">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-footer-social">
+                                <ul class="block-footer-social-list">
+                                    <li class="block-footer-social-list__item"><a href=""></a></li>
+                                    <li class="block-footer-social-list__item"><a href=""></a></li>
+                                    <li class="block-footer-social-list__item"><a href=""></a></li>
+                                    <li class="block-footer-social-list__item"><a href=""></a></li>
+                                    <li class="block-footer-social-list__item"><a href=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="js/main.js"></script>
         <script src="js/vendor.js"></script>
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     </body>
 </html>
