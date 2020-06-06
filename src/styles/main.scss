@@ -9,9 +9,17 @@
 
 $blue-color: #061e37;
 $text-color: #ffffff;
+$gray-color: #b0bec5;
+$green-color: #1de9b6;
 body {
     margin: 0;
     padding: 0;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 45px;
+        color: $blue-color;
+    }
 }
 .header {
     display: flex;
@@ -89,7 +97,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 159px;
-    margin-bottom: 185px;
+    margin-bottom: 278px;
     &-text {
         flex-basis: 37%;
         margin-left: 75px;
@@ -109,5 +117,161 @@ body {
             margin-top: 12px;
             margin-left: 1px;
         }
+    }
+}
+.block-easy {
+    &-text {
+        margin-left: 527px;
+        width: 34%;
+        align-items: center;
+        margin-bottom: 50px;
+        &__title {
+            width: 70%;
+            text-align: center;
+            margin-left: 81px;
+            span {
+                font-size: 25px;
+                color: $gray-color;
+            }
+        }
+        &__desc {
+            text-align: center;
+            color: $gray-color;
+            font-size: 15px;
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            margin-left: -7px;
+            margin-top: 21px;
+        }
+    }
+    &-icons {
+        display: flex;
+        justify-content: space-evenly;
+        &-items {
+            &__svg {
+                margin-left: 218px;
+                margin-top: 28px;
+                margin-bottom: 37px;    
+            }
+            &__svg.second {
+                margin-left: 253px;
+                margin-top: 22px;
+            }
+            &__svg.third {
+                margin-left: 267px;
+            }
+            &__title {
+                font-size: 20px;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 600;
+                text-align: center;
+                margin-left: -12px;
+                margin-top: 1px;            
+            }
+            &__title.second {
+                margin-left: 37px;
+                margin-top: -3px;
+            }
+            &__title.third {
+                margin-left: 63px;
+                margin-top: 2px;
+            }
+            &__desc {
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+                font-size: 15px;
+                color: $gray-color;
+                width: 67%;
+                margin-left: 77px;
+                margin-top: 12px;
+                line-height: 1.4;
+            }
+            &__desc.second {
+                margin-left: 105px;
+                margin-bottom: 94px;
+            }
+            &__desc.third {
+                margin-left: 115px;
+            }
+            &__btn {
+                text-decoration: none;
+                background-color: $green-color;
+                color: $text-color;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-left: 208px;
+                padding: 18px 22px;
+                border-radius: 5px;
+            }
+        }
+    }
+    &-colors {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 117px;
+        &-item {
+            display: flex;
+            position: relative;
+            width: 400px;
+            height: 150px;
+            &__svg {
+                position: absolute;
+                left: 112px;
+                top: 46px;
+            }
+            &__svg.second {
+                left: 104px;
+            }
+            &__desc {
+                position: absolute;
+                right: 113px;
+                top: 33px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 20px;
+                font-weight: 800;
+                color: $text-color;
+            }
+            &__desc.second {
+                right: 99px;
+                top: 34px;
+            }
+            &__desc.third {
+                right: 90px;
+                top: 33px;            
+            }
+            &__desc.fourth {
+                right: 118px;
+                top: 34px;            
+            }
+        }
+        &-item.first {
+            background-color: #80d8ff;
+        }
+        &-item.second {
+            background-color: #82b1ff;
+        }
+        &-item.third {
+            background-color: #b388ff;
+        }
+        &-item.fourth {
+            background-color: #ea80fc;
+        }
+    }
+}
+.block-service {
+    margin-top: 92px;
+    &__title {
+        text-align: center;
+        margin-left: 14px;
+    }
+    &__desc {
+        text-align: center;
+        width: 37%;
+        margin-left: 504px;;
+        color: $gray-color;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.6;
     }
 }
