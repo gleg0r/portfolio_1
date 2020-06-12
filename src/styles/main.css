@@ -633,5 +633,45 @@ body h2 {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
 }
+.block-service-tabs {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  width: 831px;
+  margin-left: 404px;
+  margin-top: 53px;
+}
+.block-service-tabs__tab {
+  display: flex;
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 5;
+}
+.block-service-tabs__tab span {
+  color: #061e37;
+  margin-top: 9px;
+}
+.block-service-tabs__tab p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: #061e37;
+  margin-left: 18px;
+}
+.block-service-tabs__tab-content {
+  display: flex;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  padding: 10px;
+}
+
+#tabs .hide {
+  display: none;
+}
+
+#tabs .show {
+  display: flex;
+}
 
 /*# sourceMappingURL=main.css.map */

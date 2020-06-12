@@ -134,30 +134,51 @@
                 <div class="block-service" id="service">
                     <h2 class="block-service__title">Services</h2>
                     <p class="block-service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-                    <div class="block-service-tabs">
-                        <div class="block-service-tabs__tab active">Statistics</div>
-                        <div class="block-service-tabs__tab">Inbox</div>
-                        <div class="block-service-tabs__tab">Team</div>
-                        <div class="block-service-tabs__tab">Settings</div>
-                        <div class="block-service-tabs__tab">Feed</div>
-                        <div class="block-service-tabs__tabContent">
-                            <img>
+                    <div class="block-service-tabs" id="tabs">
+                        <div class="block-service-tabs__tab">
+                            <span class="material-icons">trending_up</span>
+                            <p>Statistics</p>
+                            <span class="material-icons" styles=>arrow_drop_down</span>
+                            
+                        </div>
+                        <div class="block-service-tabs__tab-content">
+                            <img src="../img/service.png">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
                         </div>
-                        <div class="block-service-tabs__tabContent">
-                            <img>
+                        <div class="block-service-tabs__tab">
+                            <span class="material-icons">mail</span>
+                            <p>Inbox</p>
+                            <span class="material-icons" styles=>arrow_drop_down</span>
+                        </div>
+                        <div class="block-service-tabs__tab-content">
+                            <img src="../img/service.png">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
                         </div>
-                        <div class="block-service-tabs__tabContent">
-                            <img>
+                        <div class="block-service-tabs__tab">
+                            <span class="material-icons">group</span>
+                            <p>Team</p>
+                            <span class="material-icons" styles=>arrow_drop_down</span>
+                        </div>
+                        <div class="block-service-tabs__tab-content">
+                            <img src="../img/service.png">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
                         </div>
-                        <div class="block-service-tabs__tabContent">
-                            <img>
+                        <div class="block-service-tabs__tab">
+                            <span class="material-icons">settings</span>
+                            <p>Settings</p>
+                            <span class="material-icons" styles=>arrow_drop_down</span>
+                        </div>
+                        <div class="block-service-tabs__tab-content">
+                            <img src="../img/service.png">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
                         </div>
-                        <div class="block-service-tabs__tabContent">
-                            <img>
+                        <div class="block-service-tabs__tab">
+                            <span class="material-icons">rss_feed</span>
+                            <p>Feed</p>
+                            <span class="material-icons" styles=>arrow_drop_down</span>
+                        </div>
+                        <div class="block-service-tabs__tab-content">
+                            <img src="../img/service.png">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br/> <br/>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </p>
                         </div>
                     </div>
@@ -318,8 +339,47 @@
                 </div>
             </div>
         </footer>
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
+        <script src="../js/index.js"></script>
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script>
+            let tab; // заголовок вкладки
+            let tabContent; // блок содержащий контент вкладки
+
+
+            window.onload=function() {
+                tabContent=document.getElementsByClassName('block-service-tabs__tab-content');
+                tab=document.getElementsByClassName('block-service-tabs__tab');
+                hideTabsContent(1);
+            }
+
+            document.getElementById('block-service-tabs').onclick= function (event) {
+                var target=event.target;
+                if (target.className=='block-service-tabs__tab') {
+                for (var i=0; i<tab.length; i++) {
+                    if (target == tab[i]) {
+                        showTabsContent(i);
+                        break;
+                        }
+                    }
+                }
+            }
+
+            function hideTabsContent(a) {
+                for (var i=a; i<tabContent.length; i++) {
+                    tabContent[i].classList.remove('show');
+                    tabContent[i].classList.add("hide");
+                    tab[i].classList.remove('whiteborder');
+                }
+            }
+
+            function showTabsContent(b){
+                if (tabContent[b].classList.contains('hide')) {
+                    hideTabsContent(0);
+                    tab[b].classList.add('whiteborder');
+                    tabContent[b].classList.remove('hide');
+                    tabContent[b].classList.add('show');
+                }
+            }
+        </script>
     </body>
 </html>

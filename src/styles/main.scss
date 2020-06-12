@@ -93,6 +93,7 @@ body {
         z-index: -1;
     }
 }
+
 .block-video {
     display: flex;
     justify-content: space-between;
@@ -274,4 +275,46 @@ body {
         font-family: 'Raleway', sans-serif;
         line-height: 1.6;
     }
+    &-tabs {
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        width: 831px;
+        margin-left: 404px;
+        margin-top: 53px;
+        &__tab {
+            display: flex;
+            position: relative;
+            padding: 5px 10px;
+            cursor: pointer;
+            z-index:5;
+            span {
+                color: $blue-color;
+                margin-top: 9px;
+            }
+            p {
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: 700;
+                color: $blue-color;
+                margin-left: 18px;
+                
+            }
+            &-content {
+                display: flex;
+                position: relative;
+                top: -1px; 
+                z-index:1;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+#tabs .hide {
+    display: none;
+}
+
+#tabs .show {
+    display: flex;
 }
