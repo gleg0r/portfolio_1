@@ -452,6 +452,24 @@ body h2 {
   height: 750px;
   z-index: -1;
 }
+.page-green {
+  position: relative;
+}
+.page-green__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.page-green__svg {
+  background-image: url(../img/svg/bg_2.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 564px;
+  z-index: -1;
+}
 
 .block-video {
   display: flex;
@@ -619,6 +637,7 @@ body h2 {
 
 .block-service {
   margin-top: 92px;
+  margin-bottom: 94px;
 }
 .block-service__title {
   text-align: center;
@@ -637,8 +656,14 @@ body h2 {
   display: block;
   font-family: "Raleway", sans-serif;
   width: 831px;
-  margin-left: 404px;
-  margin-top: 53px;
+  margin-left: 414px;
+  margin-top: 50px;
+}
+.block-service-tabs__img {
+  margin-left: 9px;
+  margin-top: 1px;
+  width: 250px;
+  height: 156px;
 }
 .block-service-tabs__tab {
   display: flex;
@@ -646,6 +671,7 @@ body h2 {
   padding: 5px 10px;
   cursor: pointer;
   z-index: 5;
+  margin-top: 29px;
 }
 .block-service-tabs__tab span {
   color: #061e37;
@@ -659,19 +685,151 @@ body h2 {
   margin-left: 18px;
 }
 .block-service-tabs__tab-content {
-  display: flex;
-  position: relative;
-  top: -1px;
-  z-index: 1;
-  padding: 10px;
-}
-
-#tabs .hide {
   display: none;
 }
-
-#tabs .show {
+.block-service-tabs__tab-content-active {
   display: flex;
+}
+.block-service-tabs__tab-content__desc {
+  width: 57%;
+  margin-left: 25px;
+  line-height: 1.6;
+  margin-top: 2px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #061e37;
+}
+
+.material-icons.margin {
+  position: absolute;
+  right: 66px;
+  top: 3px;
+}
+
+.block-service-tabs__tab.first {
+  margin-left: -1px;
+}
+
+.block-service-tabs__tab.second {
+  margin-left: -1px;
+  margin-top: 15px;
+}
+
+.block-service-tabs__tab.third {
+  margin-left: -1px;
+  margin-top: 14px;
+}
+
+.block-service-tabs__tab.fourth {
+  margin-left: -1px;
+  margin-top: 14px;
+}
+
+.block-feedback {
+  display: flex;
+  margin-bottom: 253px;
+  position: relative;
+}
+.block-feedback-text {
+  display: block;
+  margin-top: 126px;
+  margin-left: 76px;
+  position: relative;
+  width: 34%;
+}
+.block-feedback-text__title {
+  color: #ffffff;
+}
+.block-feedback-text__desc {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 2px;
+  margin-top: 16px;
+  line-height: 1.8;
+}
+.block-feedback-text__btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #061e37;
+  padding: 18px 22px;
+  position: absolute;
+  top: 242px;
+  left: 3px;
+  border-radius: 6px;
+}
+.block-feedback-slider {
+  display: block;
+  width: 61%;
+  position: absolute;
+  right: -138px;
+  top: 87px;
+}
+.block-feedback-slider-item {
+  display: flex;
+  margin-bottom: 69px;
+}
+.block-feedback-slider-item__img {
+  display: block;
+  width: 76px;
+  height: 76px;
+  margin-top: 48px;
+  margin-left: -2px;
+}
+.block-feedback-slider-item-text {
+  display: block;
+  width: 650px;
+  height: 160px;
+  background-color: #ffffff;
+  margin-left: 42px;
+}
+.block-feedback-slider-item-text__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #061e37;
+  margin-left: 30px;
+  margin-top: 31px;
+}
+.block-feedback-slider-item-text__desc {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  color: #061e37;
+  margin-left: 30px;
+  margin-top: 10px;
+  line-height: 1.7;
+  width: 87%;
+  letter-spacing: 0.25px;
+}
+
+.slick-prev {
+  background-image: url(../img/up.png);
+  background-repeat: no-repeat;
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  left: 431px;
+  top: -45px;
+}
+
+.slick-next {
+  background-image: url(../img/down.png);
+  background-repeat: no-repeat;
+  color: transparent;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  left: 431px;
+  bottom: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */
