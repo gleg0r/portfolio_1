@@ -391,7 +391,7 @@ body h2 {
   max-width: 1170px;
 }
 .header__logo {
-  background-image: url(../img/svg/Logo.svg);
+  background-image: url(./img/svg/Logo.svg);
   background-repeat: no-repeat;
   width: 180px;
   height: 30px;
@@ -457,7 +457,7 @@ body h2 {
   z-index: -5;
 }
 .page-main__svg {
-  background-image: url(../img/svg/BG.svg);
+  background-image: url(./img/svg/BG.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -475,7 +475,7 @@ body h2 {
   z-index: -2;
 }
 .page-green__svg {
-  background-image: url(../img/svg/bg_2.svg);
+  background-image: url(./img/svg/bg_2.svg);
   position: absolute;
   top: 0;
   left: 0;
@@ -886,7 +886,7 @@ body h2 {
 }
 
 .slick-prev {
-  background-image: url(../img/up.png);
+  background-image: url(./img/up.png);
   background-repeat: no-repeat;
   color: transparent;
   background-color: transparent;
@@ -898,7 +898,7 @@ body h2 {
 }
 
 .slick-next {
-  background-image: url(../img/down.png);
+  background-image: url(./img/down.png);
   background-repeat: no-repeat;
   color: transparent;
   background-color: transparent;
@@ -1134,7 +1134,7 @@ input:checked + label:before {
   height: 300px;
 }
 .block-footer__logo {
-  background-image: url(../img/svg/Logo.svg);
+  background-image: url(./img/svg/Logo.svg);
   background-repeat: no-repeat;
   width: 180px;
   height: 30px;
@@ -1157,13 +1157,13 @@ input:checked + label:before {
   margin-right: 44px;
 }
 .block-footer-container-list__item.second::before {
-  content: url(../img/dot.png);
+  content: url(./img/dot.png);
   position: absolute;
   left: 116px;
   top: -1px;
 }
 .block-footer-container-list__item.third::before {
-  content: url(../img/dot.png);
+  content: url(./img/dot.png);
   position: absolute;
   right: 129px;
   top: -1px;
