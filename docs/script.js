@@ -1,6 +1,3 @@
-import "./import/modules";
-
-
 const btns = document.querySelectorAll('.block-service-tabs__tab')
 const tabsBody = document.querySelectorAll('.block-service-tabs__tab-content')
 const btn = document.querySelector('.block-video-demo__btn')
@@ -50,4 +47,3 @@ nextFirst.addEventListener('click', e => {
     document.getElementById('second').classList.remove('block-team-hide')
     document.getElementById('second').classList.add('block-team-show')
 })
-
