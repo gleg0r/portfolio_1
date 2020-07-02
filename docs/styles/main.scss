@@ -215,6 +215,30 @@ body {
                 font-size: 16px;
                 font-weight: 400;
                 color: $blue-color;
+                &::-webkit-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &::-moz-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &:-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &::-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
                 &::placeholder {
                     font-family: 'Raleway', sans-serif;
                     font-size: 16px;
@@ -232,6 +256,30 @@ body {
                 font-size: 16px;
                 font-weight: 400;
                 color: $blue-color;
+                &::-webkit-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &::-moz-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &:-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
+                &::-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $blue-color;
+                }
                 &::placeholder {
                     font-family: 'Raleway', sans-serif;
                     font-size: 16px;
@@ -1091,6 +1139,30 @@ body {
             border-color: $blue-color;
             font-family: 'Raleway', sans-serif;
             color: $blue-color;
+            &::-webkit-input-placeholder {
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blue-color;
+            }
+            &::-moz-placeholder {
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blue-color;
+            }
+            &:-ms-input-placeholder {
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blue-color;
+            }
+            &::-ms-input-placeholder {
+                font-family: 'Raleway', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blue-color;
+            }
             &::placeholder {
                 font-family: 'Raleway', sans-serif;
                 font-size: 14px;
@@ -1108,6 +1180,30 @@ body {
                 border-color: $blue-color;
                 font-family: 'Raleway', sans-serif;
                 color: $blue-color;
+                &::-webkit-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $blue-color;
+                }
+                &::-moz-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $blue-color;
+                }
+                &:-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $blue-color;
+                }
+                &::-ms-input-placeholder {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $blue-color;
+                }
                 &::placeholder {
                     font-family: 'Raleway', sans-serif;
                     font-size: 14px;
@@ -1163,7 +1259,8 @@ label {
         padding: 0px 8px;
         background: #FFF;
         border: 1px solid $blue-color;
-        border-image: initial;
+        -o-border-image: initial;
+           border-image: initial;
         vertical-align: middle;
     }
 }
